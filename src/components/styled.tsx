@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import styled from "styled-components";
 
 export const Button = styled.button`
@@ -16,5 +17,19 @@ export const Button = styled.button`
 
   &:hover {
     filter: brightness(80%);
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  display: flex;
+  color: #c209c1;
+  margin-bottom: 32px;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  transform-origin: left;
+
+  &:hover {
+    transform: translateY(5px);
+    filter: brightness(150%);
   }
 `;
