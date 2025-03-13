@@ -33,7 +33,7 @@ Follow these steps to set up and run the application:
 
 1. Clone the repository:
    ```sh
-   git clone
+   git clone https://github.com/jdtorregrosas/picsart-masonry
    ```
 2. Navigate into the project directory:
    ```sh
