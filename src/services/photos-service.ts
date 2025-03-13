@@ -1,6 +1,6 @@
 import { AxiosInstance } from "axios";
+import { Photo } from "../models/photo.model";
 import { HttpClient } from "./http-client";
-import { Photo } from "./types";
 
 export class PhotosService {
   httpClient: AxiosInstance;
