@@ -8,6 +8,17 @@ This project is a Single Page Application (SPA) built with React and TypeScript.
 
 The application prioritizes performance optimization, lazy loading, and efficient rendering using modern React techniques.
 
+## Technologies Used
+
+- **React** for building the user interface
+- **TypeScript** for static typing and improved developer experience
+- **styled-components** for scoped, modular styling
+- **Pexels API** for fetching photo data
+- **React Router** for routing between views
+- **Axios** for API requests
+- **Vitest** for unit testing
+- **Intersection Observer** for lazy-loading images
+
 ## Requirements
 
 To run this project locally, ensure you have the following installed:
@@ -22,7 +33,7 @@ Follow these steps to set up and run the application:
 
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone
    ```
 2. Navigate into the project directory:
    ```sh
@@ -80,14 +91,29 @@ Follow these steps to set up and run the application:
 - The masonry grid dynamically adjusts the number of columns based on screen width to ensure responsiveness.
 - In the **photo detail view**, the layout adapts based on the image orientation (vertical or horizontal), providing a better user experience.
 
+## Testing
+
+Unit tests were added to ensure the reliability and correctness of key parts of the application, including services and components.
+
+To run the tests: `npm run test`
+
+### Services Tests
+
+Added tests for the PhotosService to ensure proper handling of API requests, error handling, and data fetching logic. These tests simulate the behavior of the service to verify that it interacts with the API as expected.
+
+### Photo-Detail Component Tests
+
+Added tests for the PhotoDetail component to verify that the photo details (such as photographer, dimensions, and alt text) are rendered correctly.
+Included tests to ensure the correct orientation (vertical or horizontal) is applied based on the photo's dimensions.
+These tests ensure that the component behaves as expected and correctly displays the relevant photo information.
+
 ## Conclusion
 
 This project demonstrates an optimized, high-performance React application with efficient image loading, virtualization, and API integration. The focus was on creating a scalable and responsive UI while ensuring minimal performance overhead.
 
 Future improvements could include:
 
-- Adding **unit tests** to improve reliability.
-- Implementing a **search feature** to dynamically filter images based on user input.
-- Enhancing **accessibility** by improving keyboard navigation and ARIA attributes.
-
-This implementation showcases strong front-end engineering skills, focusing on performance, maintainability, and scalability.
+- Improving performance through better image optimization techniques.
+- Adding unit tests for more components to increase test coverage.
+- Implementing a search feature to dynamically filter images based on user input.
+- Enhancing accessibility by improving keyboard navigation and ARIA attributes.

@@ -2,7 +2,6 @@ const throwIfUndefined = (env?: string) => {
   if (!env) {
     throw new Error("ENV variable not defined");
   }
-  console.log("env", env);
   return env;
 };
 
