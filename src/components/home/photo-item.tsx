@@ -8,13 +8,14 @@ interface Props {
 }
 export const PhotoItem = ({ photo }: Props) => {
   return (
-    <NavLink to={`/photo/${photo.id}`}>
+    <NavLink to={`/photo/${photo.id}`} style={{ textDecoration: "none" }}>
       <StyledPhotoItem key={photo.id}>
         <StyledPhotoImage
           src={photo.src.medium}
           alt={photo.alt}
           loading="lazy"
         />
+        <p>by {photo.photographer}</p>
       </StyledPhotoItem>
     </NavLink>
   );
